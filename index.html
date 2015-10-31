@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <style>
+        
+        .subtitle {
+            font-size: 16px;
+            color: gold;
+            padding: 0px;
+        }
+    
+    .title {
+        text-align: center;
+        color: black;
+        padding: 0px;
+        
+    }
+    
+    .webLink {
+        text-align: center;
+        background-color: white;
+        color: pink;
+        border: 3px solid gold;
+        height: wrap;
+    }
+    
+        </style>
+    
+    <script>
+        
+        function redirect(address) {
+            window.location = address;
+        }
+    
+    function mouseOver(elem) {
+        elem.style.border = "3px solid white";
+        elem.style.backgroundColor = "pink";
+        elem.style.color = "white";
+    }
+    function mouseOut(elem) {
+        elem.style.border = "3px solid gold";
+        elem.style.backgroundColor = "white";
+        elem.style.color = "pink";
+    }
+    
+        </script>
+    
+    <head>
+        <title>Bunny Browser</title>
+        <link rel="icon" href="homeBunny.png">
+            </head>
+    
+    <body style="background-color:pink; text-align:center;">
+        
+        <img src="homeBunny.png" alt="homeBunny.png">
+            
+            <div style="border:3px solid gold;">
+                <h1 class="title">Welcome to Bunny Browser</h1>
+                <p class="subtitle">By: Brayden Cloud and Holly Pham</p>
+            </div>
+            
+            <p>Use the search bar above to search with Google's engine.<p>
+            <p>Here are some useful links:</p>
+            
+            <div id="canvas" class="webLink" onmouseover='mouseOver(this)' onmouseout='mouseOut(this)' onclick='redirect("https://kellerisd.instructure.com/login/ldap")'>
+                <h3>Canvas</h3>
+            </div>
+            <br>
+            <div id="hac" class="webLink" onmouseover='mouseOver(this)' onmouseout='mouseOut(this)' onclick='redirect("https://homeaccess.kellerisd.net/HomeAccess/Account/LogOn?ReturnUrl=%2fHomeAccess%2f")'>
+                <h3>Home Access Center</h3>
+            </div>
+            <br>
+            <div id="ai2" class="webLink" onmouseover='mouseOver(this)' onmouseout='mouseOut(this)' onclick='redirect("http://appinventor.mit.edu/explore/")'>
+                <h3> App Inventor 2</h3>
+            </div>
+            <br>
+            <div id="kisd" class="webLink" onmouseover='mouseOver(this)' onmouseout='mouseOut(this)' onclick='redirect("http://www.kellerisd.net/Pages/default.aspx")'>
+                <h3>KISD</h3>
+            </div>
+            <br>
+            <div id="central" class="webLink" onmouseover='mouseOver(this)' onmouseout='mouseOut(this)' onclick='redicrect("http://campus.kellerisd.net/schools/CHS-004/Pages/default.aspx")'>
+                <h3>Central High School</h3>
+            </div>
+            
+            </body>
+    
+</html>
